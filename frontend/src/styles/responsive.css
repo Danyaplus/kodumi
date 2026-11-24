@@ -1,0 +1,66 @@
+/* React root is the persistent page shell. */
+#root{min-height:100vh;display:flex;flex-direction:column}#root>main{flex:1}.page-view{animation:page-fade .18s ease-out}@keyframes page-fade{from{opacity:.65;transform:translateY(3px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.page-view{animation:none}}
+
+
+/* Approved hero artwork: a single, edge-to-edge composition. */
+.hero{background:transparent;border:0;padding:16px 0 0;isolation:auto}
+.hero:before{display:none}
+.hero-shell{position:relative}
+.hero-card{position:relative;isolation:isolate;display:flex;align-items:center;min-height:clamp(310px,29vw,385px);border-radius:18px;border-color:#456da866;background:#071225;box-shadow:0 12px 38px #02091c66;overflow:hidden}
+.hero-card:before{z-index:1;background:linear-gradient(90deg,#030b1b80 0%,#030b1b2e 43%,transparent 68%)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:right center;filter:none}
+.hero-overlay{position:relative;inset:auto;z-index:2;max-width:53%;padding:30px clamp(24px,3.5vw,48px);background:none;justify-content:center}
+.hero .eyebrow{color:#a9d9ff;margin-bottom:12px}
+.hero h1{font-size:clamp(32px,3.45vw,49px);line-height:1.1;text-wrap:balance;text-shadow:0 2px 20px #030918aa}
+.hero p{color:#d1e1f5;margin:12px 0 20px;line-height:1.6}
+.project-cover,.detail-grid .project-cover{aspect-ratio:16/9;background:#071225}
+.project-cover img,.project .project-cover img{object-fit:cover;object-position:center;min-height:0}
+
+/* Custom language selector; no operating-system white option popup. */
+.header{z-index:30}
+.head-inner{gap:clamp(12px,1.6vw,24px)}
+.nav{gap:clamp(12px,1.6vw,22px)}
+.header-actions{margin-left:0;gap:10px;flex:none}
+.lang-switcher{position:relative;display:block;width:auto;padding:0;border:0;background:none;box-shadow:none;flex:none}
+.language-trigger{display:flex;align-items:center;justify-content:center;gap:9px;min-height:38px;padding:8px 12px;color:#edf5ff;background:#111e36;border:1px solid #46648c;border-radius:9px;cursor:pointer}
+.language-trigger:hover,.language-trigger[aria-expanded=true]{background:#192c4a;border-color:#6daeff}
+.lang-switcher .language-code{font-size:12px;font-weight:750;letter-spacing:.03em;color:#edf5ff}
+.language-chevron{display:block;width:7px;height:7px;border-right:1.5px solid #b8d7ff;border-bottom:1.5px solid #b8d7ff;transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.language-trigger[aria-expanded=true] .language-chevron{transform:translateY(2px) rotate(225deg)}
+.language-options{position:absolute;top:calc(100% + 8px);right:0;min-width:190px;padding:5px;background:#101b30;border:1px solid #3f608a;border-radius:12px;box-shadow:0 12px 35px #0009;z-index:40}
+.language-options[hidden]{display:none}
+.language-option{display:flex;align-items:center;gap:10px;width:100%;min-height:40px;padding:9px 10px;text-align:left;border:1px solid transparent;border-radius:7px;background:transparent;color:#e9f2ff;cursor:pointer}
+.lang-switcher .option-code{font-size:11px;color:#92b8e6;min-width:24px;letter-spacing:.03em}
+.lang-switcher .option-name{font-size:13px;font-weight:550;letter-spacing:0;text-transform:none;color:#edf5ff;flex:1}
+.language-option:hover,.language-option:focus-visible{background:#203653}
+.language-option[aria-pressed=true]{background:#193653;border-color:#3b81bf}
+.language-option .ico{width:16px;height:16px;color:#67d4ff}
+@media(max-width:1050px){
+ .header-actions{display:none}.menu-toggle{display:block;margin-left:auto}
+ .header .nav{display:none}
+ .header .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;margin:0;padding:12px 24px 18px;background:#10192e;border-bottom:1px solid #385278;flex-direction:column;align-items:stretch;gap:0;max-height:calc(100dvh - var(--head));overflow:auto;box-shadow:0 12px 24px #0008}
+ .header .nav a{padding:11px 4px}.header .nav a[aria-current=page]:after{left:4px;right:auto;width:28px}
+ .mobile-controls{display:flex;flex-direction:column;gap:10px;padding-top:12px}
+ .mobile-controls .language-trigger{width:100%;justify-content:space-between}
+ .mobile-controls .language-options{position:static;margin-top:6px;min-width:0}
+ .mobile-controls .btn{width:100%}
+}
+@media(max-width:900px){
+ .hero-card{min-height:320px}.hero-overlay{max-width:60%;padding:24px}.hero h1{font-size:clamp(29px,4vw,40px)}
+ .hero-card:before{background:linear-gradient(90deg,#030b1be0,#030b1b70 55%,transparent 90%)}
+}
+@media(max-width:600px){
+ .hero{padding-top:12px}.hero-card{display:flex;flex-direction:column;align-items:stretch;min-height:0;border-radius:16px}
+ .hero-bg{position:relative;inset:auto;width:100%;height:clamp(152px,48vw,250px);min-height:0;object-position:100% center;object-fit:cover;mask-image:linear-gradient(#000 78%,transparent 100%)}
+ .hero-card:before{display:none}.hero-overlay{max-width:none;padding:5px 19px 22px;margin-top:-7px;background:none}
+ .hero .eyebrow{font-size:10px;margin-bottom:9px}.hero h1{font-size:clamp(28px,7.7vw,37px);line-height:1.14}.hero p{font-size:14px;line-height:1.55;margin:10px 0 16px}
+ .hero .actions{gap:8px}.hero .actions .btn{flex:1;min-width:0}
+ .header .nav.open{padding-inline:16px}
+ .project-cover,.detail-grid .project-cover{aspect-ratio:16/9}
+}
+
+/* Neon Kodumi mark: transparent artwork, no tile or duplicate wordmark. */
+.brand{gap:8px;align-items:center}
+.brand img,.footer .brand img{width:38px;height:38px;flex:0 0 38px;object-fit:contain;background:transparent;border:0;border-radius:0;box-shadow:none;filter:none}
+.brand span{color:#f3f6ff}
+@media(max-width:600px){.brand img,.footer .brand img{width:34px;height:34px;flex-basis:34px}.brand{gap:7px}}
