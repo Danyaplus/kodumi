@@ -1,1 +1,0 @@
-"""Kodumi static site generator."""
