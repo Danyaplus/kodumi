@@ -1,0 +1,375 @@
+{
+  "siteUrl": "https://danyaplus.github.io/kodumi",
+  "brand": "Kodumi",
+  "email": "",
+  "telegramUrl": "",
+  "githubUrl": "",
+  "portfolioUrl": "",
+  "projects": [
+    {
+      "slug": "kodumi-games",
+      "name": "Kodumi Games",
+      "category": "games",
+      "status": "In development",
+      "featured": true,
+      "summary": "Gaming web platform with online matches, player profiles and its own ecosystem.",
+      "description": "Kodumi Games brings together online games, social features and personalization in one interface. The project is evolving as a standalone product inside the Kodumi ecosystem.",
+      "technologies": [
+        "javascript",
+        "react",
+        "nodejs",
+        "sql",
+        "supabase"
+      ],
+      "features": [
+        "Online games and matches",
+        "Profiles, stats and achievements",
+        "Chat and personalization",
+        "Platform administration"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {
+        "javascript": "Logic for both the client and server parts.",
+        "react": "Interface components, game screens and admin tools.",
+        "nodejs": "Server logic and real-time multiplayer interactions.",
+        "sql": "Storage and structured data processing.",
+        "supabase": "Database and backend infrastructure."
+      }
+    },
+    {
+      "slug": "demo-business",
+      "name": "Business Hub",
+      "category": "web",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A concept for a workspace that brings business tasks, clients and reports together.",
+      "description": "A sample dashboard for organizing a company’s daily operations.",
+      "features": [
+        "Task management",
+        "Client directory",
+        "Reports and activity"
+      ],
+      "technologies": [
+        "javascript",
+        "react",
+        "nodejs",
+        "sql"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт единой платформы для задач, клиентов и отчётов бизнеса.",
+          "description": "Демонстрационный кабинет для организации ежедневной работы компании.",
+          "features": [
+            "Управление задачами",
+            "База клиентов",
+            "Отчёты и активность"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт єдиної платформи для завдань, клієнтів і звітів бізнесу.",
+          "description": "Демонстраційний кабінет для організації щоденної роботи компанії.",
+          "features": [
+            "Керування завданнями",
+            "База клієнтів",
+            "Звіти й активність"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "demo-price",
+      "name": "PriceScope",
+      "category": "web",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A concept for comparing product prices across online stores.",
+      "description": "A sample product search experience with price comparisons and filters.",
+      "features": [
+        "Product search",
+        "Price comparison",
+        "Category filters"
+      ],
+      "technologies": [
+        "javascript",
+        "react",
+        "php",
+        "sql"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт сайта для сравнения цен на товары в интернет-магазинах.",
+          "description": "Демонстрационный поиск товаров с сопоставлением цен и фильтрами.",
+          "features": [
+            "Поиск товаров",
+            "Сравнение цен",
+            "Фильтры по категориям"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт сайту для порівняння цін на товари в інтернет-магазинах.",
+          "description": "Демонстраційний пошук товарів із порівнянням цін і фільтрами.",
+          "features": [
+            "Пошук товарів",
+            "Порівняння цін",
+            "Фільтри за категоріями"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "demo-flow",
+      "name": "FlowDesk",
+      "category": "software",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A desktop utility concept for organizing files and everyday workflows.",
+      "description": "A sample tool for routine file operations and task automation.",
+      "features": [
+        "File organization",
+        "Batch operations",
+        "Activity history"
+      ],
+      "technologies": [
+        "python",
+        "sql"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт программы для организации файлов и повседневных процессов.",
+          "description": "Пример инструмента для рутинных операций с файлами и автоматизации задач.",
+          "features": [
+            "Организация файлов",
+            "Пакетные операции",
+            "История действий"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт програми для організації файлів і щоденних процесів.",
+          "description": "Приклад інструмента для рутинних операцій із файлами й автоматизації завдань.",
+          "features": [
+            "Організація файлів",
+            "Пакетні операції",
+            "Історія дій"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "demo-bot",
+      "name": "NotifyFlow",
+      "category": "bots",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A bot concept for reminders, notifications and simple automation.",
+      "description": "A sample messaging assistant for keeping track of routine tasks.",
+      "features": [
+        "Reminders",
+        "Notifications",
+        "Scheduled actions"
+      ],
+      "technologies": [
+        "python",
+        "sql"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт бота для напоминаний, уведомлений и простой автоматизации.",
+          "description": "Демонстрационный помощник в мессенджере для повседневных задач.",
+          "features": [
+            "Напоминания",
+            "Уведомления",
+            "Действия по расписанию"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт бота для нагадувань, сповіщень і простої автоматизації.",
+          "description": "Демонстраційний помічник у месенджері для щоденних завдань.",
+          "features": [
+            "Нагадування",
+            "Сповіщення",
+            "Дії за розкладом"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "demo-studio",
+      "name": "StudioBoard",
+      "category": "web",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A concept for planning creative projects and sharing progress.",
+      "description": "A sample collaborative board for ideas, tasks and project milestones.",
+      "features": [
+        "Project boards",
+        "Task lists",
+        "Progress overview"
+      ],
+      "technologies": [
+        "react",
+        "javascript",
+        "supabase"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт платформы для планирования творческих проектов.",
+          "description": "Пример совместной доски для идей, задач и этапов проекта.",
+          "features": [
+            "Доски проектов",
+            "Списки задач",
+            "Обзор прогресса"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт платформи для планування творчих проєктів.",
+          "description": "Приклад спільної дошки для ідей, завдань та етапів проєкту.",
+          "features": [
+            "Дошки проєктів",
+            "Списки завдань",
+            "Огляд прогресу"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "demo-data",
+      "name": "DataLens",
+      "category": "software",
+      "demo": true,
+      "featured": false,
+      "status": "Demo concept",
+      "summary": "A concept for exploring datasets and visualizing key indicators.",
+      "description": "A sample application for viewing, filtering and summarizing structured data.",
+      "features": [
+        "Data import",
+        "Interactive filters",
+        "Summary reports"
+      ],
+      "technologies": [
+        "python",
+        "sql"
+      ],
+      "url": "",
+      "image": "",
+      "gallery": [],
+      "technologyNotes": {},
+      "translations": {
+        "ru": {
+          "status": "Демо-проект",
+          "summary": "Концепт приложения для изучения данных и визуализации показателей.",
+          "description": "Пример программы для просмотра, фильтрации и обобщения структурированных данных.",
+          "features": [
+            "Импорт данных",
+            "Интерактивные фильтры",
+            "Сводные отчёты"
+          ]
+        },
+        "uk": {
+          "status": "Демопроєкт",
+          "summary": "Концепт застосунку для дослідження даних і візуалізації показників.",
+          "description": "Приклад програми для перегляду, фільтрації та узагальнення структурованих даних.",
+          "features": [
+            "Імпорт даних",
+            "Інтерактивні фільтри",
+            "Зведені звіти"
+          ]
+        }
+      }
+    }
+  ],
+  "technologies": [
+    {
+      "slug": "python",
+      "name": "Python",
+      "symbol": "Py",
+      "color": "#5aa7e9",
+      "description": "Automation, bots, utilities and desktop applications."
+    },
+    {
+      "slug": "php",
+      "name": "PHP",
+      "symbol": "php",
+      "color": "#a7a5ed",
+      "description": "Server-side web development. Public projects in this direction will be added to the catalog."
+    },
+    {
+      "slug": "javascript",
+      "name": "JavaScript",
+      "symbol": "JS",
+      "color": "#f3d46b",
+      "description": "Interactive interfaces and web application logic."
+    },
+    {
+      "slug": "react",
+      "name": "React",
+      "symbol": "⚛",
+      "color": "#65d9f3",
+      "description": "Component-based interfaces and complex web applications."
+    },
+    {
+      "slug": "nodejs",
+      "name": "Node.js",
+      "symbol": "N",
+      "color": "#9add8a",
+      "description": "Server applications, APIs and real-time features."
+    },
+    {
+      "slug": "sql",
+      "name": "SQL",
+      "symbol": "DB",
+      "color": "#8d9bff",
+      "description": "Storage, processing and organization of data."
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase",
+      "symbol": "S",
+      "color": "#55d9a0",
+      "description": "Databases, authentication and application infrastructure."
+    },
+    {
+      "slug": "html-css",
+      "name": "HTML / CSS",
+      "symbol": "</>",
+      "color": "#ffa278",
+      "description": "Responsive layouts and accessible web interfaces."
+    }
+  ]
+}
