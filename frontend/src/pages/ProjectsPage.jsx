@@ -1,5 +1,0 @@
-import React from 'react';
-import { categories, projects, technologies } from '../lib/site.js';
-import { Intro, Link, TechStrip, Empty } from '../components/Ui.jsx';
-import { ProjectGrid } from '../components/ProjectCard.jsx';
-export default function ProjectsPage({ category }) { const selected = projects.filter(p => !category || p.category === category); return <Intro title={category ? categories[category] : 'Все проекты'} description="Каталог продуктов Kodumi. Выберите категорию или откройте проект, чтобы узнать больше." parents={category ? [['/projects/', 'Проекты']] : []}><nav className="filters" aria-label="Категории проектов">{[['', 'Все проекты'], ...Object.entries(categories)].map(([key, name]) => <Link key={key} to={key ? `/projects/category/${key}/` : '/projects/'} className="filter" aria-current={(category || '') === key ? 'page' : undefined}>{name}</Link>)}</nav><div style={{ marginBottom: 20 }}><TechStrip items={technologies}/></div>{selected.length ? <ProjectGrid items={selected}/> : <Empty message="Проекты этой категории появятся здесь после публикации."/>}</Intro>; }
