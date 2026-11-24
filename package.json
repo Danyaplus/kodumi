@@ -1,0 +1,19 @@
+{
+  "name": "kodumi",
+  "version": "3.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend",
+    "build": "npm run build -w frontend",
+    "preview": "npm run preview -w frontend",
+    "images": "npm run images -w frontend",
+    "check": "npm run build"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
