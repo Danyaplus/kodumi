@@ -1,5 +1,0 @@
-import React from 'react';
-import { projects } from '../lib/site.js';
-import { Intro, External } from '../components/Ui.jsx';
-import { ProjectCover, ProjectStack, Gallery } from '../components/ProjectCard.jsx';
-export default function ProjectPage({ slug }) { const p = projects.find(x => x.slug === slug); return <Intro title={p.name} description={p.summary} parents={[["/projects/", "Проекты"]]}><div className="detail-grid"><div><ProjectCover project={p}/><div className="prose subsection"><h2>О проекте</h2><p>{p.description}</p><h2>Возможности</h2><ul>{p.features.map(f => <li key={f}>{f}</li>)}</ul></div><Gallery project={p}/></div><aside className="panel stack-panel"><span className="status">{p.status}</span><h2 style={{ marginTop: 12 }}>Технологии проекта</h2><p>Что использовалось при разработке.</p><ProjectStack project={p}/><div className="subsection">{p.url ? <External url={p.url} className="btn primary">Открыть проект</External> : <p className="notice">Публичная ссылка на проект будет добавлена отдельно.</p>}</div></aside></div></Intro>; }
