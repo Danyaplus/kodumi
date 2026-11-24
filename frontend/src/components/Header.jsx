@@ -1,0 +1,7 @@
+import React, { useState, useEffect } from 'react';
+import { navigation, asset } from '../lib/site.js';
+import { Link, Icon, Button } from './Ui.jsx';
+export function Brand() { return <Link to="/" className="brand" aria-label="Kodumi — главная"><img src={asset('desktop/site/logo.webp')} width="33" height="33" alt=""/>Kodumi</Link>; }
+export default function Header({ path }) { const [open, setOpen] = useState(false); useEffect(() => { setOpen(false); }, [path]); useEffect(() => { const close = e => { if (e.key === 'Escape')
+    setOpen(false); }; const outside = e => { if (!e.target.closest('#site-header'))
+    setOpen(false); }; document.addEventListener('keydown', close); document.addEventListener('click', outside); return () => { document.removeEventListener('keydown', close); document.removeEventListener('click', outside); }; }, []); return <header className="header" id="site-header"><div className="wrap head-inner"><Brand /><nav className={'nav' + (open ? ' open' : '')} id="site-nav" aria-label="Основная навигация">{navigation.map(([to, name]) => <Link key={to} to={to} aria-current={(to === '/' ? path === '/' : path.startsWith(to)) ? 'page' : undefined}>{name}</Link>)}</nav><Button to="/contacts/" primary>Связаться</Button><button type="button" className="menu-toggle" aria-label={open ? 'Закрыть меню' : 'Открыть меню'} aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen(!open)}><Icon name="menu"/></button></div></header>; }
