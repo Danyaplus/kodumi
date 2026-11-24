@@ -1,0 +1,22 @@
+{
+  "site/hero.webp": {
+    "mobile": 480,
+    "tablet": 800,
+    "desktop": 1440
+  },
+  "site/logo.webp": {
+    "mobile": 256,
+    "tablet": 256,
+    "desktop": 256
+  },
+  "site/social.webp": {
+    "mobile": 480,
+    "tablet": 800,
+    "desktop": 1200
+  },
+  "site/project-placeholder.webp": {
+    "mobile": 480,
+    "tablet": 800,
+    "desktop": 1440
+  }
+}
