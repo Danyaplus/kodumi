@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kodumi.example/</loc></url>
+  <url><loc>https://kodumi.example/projects/</loc></url>
+  <url><loc>https://kodumi.example/projects/category/web/</loc></url>
+  <url><loc>https://kodumi.example/projects/category/games/</loc></url>
+  <url><loc>https://kodumi.example/projects/category/software/</loc></url>
+  <url><loc>https://kodumi.example/projects/category/bots/</loc></url>
+  <url><loc>https://kodumi.example/projects/category/other/</loc></url>
+  <url><loc>https://kodumi.example/projects/kodumi-games/</loc></url>
+  <url><loc>https://kodumi.example/technologies/</loc></url>
+  <url><loc>https://kodumi.example/technologies/python/</loc></url>
+  <url><loc>https://kodumi.example/technologies/php/</loc></url>
+  <url><loc>https://kodumi.example/technologies/javascript/</loc></url>
+  <url><loc>https://kodumi.example/technologies/react/</loc></url>
+  <url><loc>https://kodumi.example/technologies/nodejs/</loc></url>
+  <url><loc>https://kodumi.example/technologies/sql/</loc></url>
+  <url><loc>https://kodumi.example/technologies/supabase/</loc></url>
+  <url><loc>https://kodumi.example/technologies/html-css/</loc></url>
+  <url><loc>https://kodumi.example/services/</loc></url>
+  <url><loc>https://kodumi.example/about/</loc></url>
+  <url><loc>https://kodumi.example/contacts/</loc></url>
+  <url><loc>https://kodumi.example/portfolio/</loc></url>
+</urlset>
